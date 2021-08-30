@@ -1,0 +1,463 @@
+:root{
+    --orange:#e67e22;
+    --black:#333;
+    --light-color:#777;
+    --border:.1rem solid rgba(0,0,0,.2);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --Roboto:'Roboto',sans-serif;
+}
+
+*{
+    padding:0;
+    margin:0;
+    outline:none; border:none;
+    text-transform: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:lighter;
+} 
+
+html{
+    font-size:62.5%;
+    overflow-x: hidden;
+    scroll-padding-top:6rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 7%; 
+}
+
+.header{
+    position: fixed;
+    top:0; left:0;right: 0;
+    z-index:1000;
+    background: #00000096;
+    display:flex;
+    align-items: center;
+    padding: 1.2rem 7%;
+    
+}
+
+.header .logo{
+    color:var(--orange);
+    font-size: 2.5rem;
+    margin-right: auto;
+}
+
+.header .logo span{
+    color:var(--orange);
+}
+
+.header .navbar a{
+    color:#fff;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    padding-right: 42px;
+    float:right;
+    margin-right: 2rem;
+
+}
+
+.header .navbar a:hover{
+    color:var(--orange);
+}
+
+.header .icons i{
+    height:4.5rem;
+    line-height: 4.5rem;
+    width:4.5rem;
+    text-align: center;
+    color:var(--black);
+    background:violet;
+    border-radius: 20%;
+    margin-left: .7rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+
+}
+
+.header .icons i:hover{
+    color:royalblue;
+    background: var(--orange);
+}
+
+.header .search-form{
+    position: absolute;
+    background: cornsilk;
+    border-radius:  .5rem;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    top:110%; right:7%;
+    height:6rem;
+    width:50rem;
+    padding: 1rem;
+    display: none;
+}
+
+.header .search-form.active{
+    display: flex;
+    
+}
+
+.header .search-form #search-box{
+    width:100%;
+    border:var(--border);
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color:yellow;
+    height: 100%;
+}
+ 
+.header .search-form label{
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-right: .5rem;
+    cursor: pointer;
+    color:var(--black);
+}
+
+.header .search-form label:hover{
+    color:var(--orange);
+}
+
+#menu-bar{
+    display: none;
+}
+
+.home{
+    min-height: 100vh;
+    background-image: url("yog.jpg");
+    background-position: center;
+    place-items: center;
+    padding-top: 8rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width:100%; 
+
+}
+.home .content{
+    text-align: center;
+
+}
+
+.home .content p{
+    font-size: 5.6rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 50px;
+    color:tomato;
+    margin-top:3.4rem;
+}
+
+.home .content h2{
+    font-size: 5.6rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:7.6rem;
+    color:orange;
+    margin-top: 0.5rem;
+    padding-top: 10.4rem;
+    
+}
+.home .content .btn{
+    font-size: 2.2rem;
+    background-color: #000;
+    padding: 0.3rem;
+    border-radius: 20px;
+
+}
+
+/*end homeSection*/
+
+/*blog*/
+.blog{
+    background:#f9f9f9;
+    padding:4.5rem 0;
+}
+.blog  .title h2{
+    font-size: 2.3rem;
+    position: center;
+    text-align: center;
+    padding-top: 30px;
+    color:#e67e22;
+
+}
+.blog .title p{
+    font-size: 2.1rem;
+    position: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.blog-content{
+    margin:2rem 0;
+}
+.blog-img{
+    position:relative;
+}
+.blog-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background:var(--exDark);
+    color:#fff;
+    font-size: 1.4rem;
+    padding:0.3rem 0.6rem;
+}
+.blog-text{
+    margin:2.2rem 0;
+    padding:0 1rem;
+}
+.blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.blog-text h2{
+    font-family: var(--playfair);
+    padding:1rem 0;
+    font-size: 2.65rem;
+    font-weight: 500;
+    position: center;
+}
+
+.blog-text p{
+    font-weight: 300;
+    font-size: 2.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+}
+.blog-text a{
+    font-family: var(--Roboto);
+    font-size: 4.1rem;
+    text-decoration:none;
+    color:var(--dark);
+    display:inline-block;
+    background:var(--dark);
+    color:blueviolet;
+    padding:0.55rem 1.2rem;
+    transition: all 0.5s ease;
+}
+.blog-text a:hover{
+    background:var(--exDark);
+}
+.blog-text button{
+    background-color: aquamarine;
+    border-radius: 20px;
+    color: black;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+/*end blog*/
+/*about start*/
+.about{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: violet;
+
+}
+
+.about .about-title h2{
+    font-size: 40px;
+    text-align: center;
+    font-family: serif;
+}
+.about .about-para h3{
+    font-size: 25px;
+    text-align: center;
+    font-family: serif;
+}
+
+.about .about-para p{
+    font-size: 15px;
+    text-align: center;
+    font-family: serif;
+}
+/*anout end*/
+/*contact section start*/
+.contact{
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+
+.contact form{
+    background:#000;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin:2rem auto;
+    max-width:70rem;
+    padding:2rem;
+}
+.contact form h3{
+    color:yellow;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.contact form .inputBox{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.contact form .inputBox input,
+.contact form textarea{
+    width:100%;
+    background:#eee;
+    padding:.5rem;
+    margin:.7rem 0;
+    border-radius: .5rem;
+    color:var(--black);
+    font-size: 1.7rem;
+}
+.contact form .inputBox input{
+    width:49%;
+
+}
+/*contact section end*/
+/*footer section start*/
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:chartreuse;
+    border-radius: .2rem;
+    
+}
+
+.footer .credit{
+    text-transform: capitalize;
+    font-size: 2rem;
+    color:var(--black);
+    padding:1rem 0;
+
+}
+
+.footer .credit span{
+    color:var(--orange);
+}
+
+.footer .follow{
+    padding:1rem;
+
+}
+
+.footer .follow a{
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    background:#eee;
+    color:blue;
+    margin: 0.1rem;
+    text-align: center;
+}
+
+.footer .follow a:hover{
+    background:var(--orange);
+
+}
+section{
+    padding:2rem;
+}
+/*media queries*/
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem;
+    }
+    section{
+        padding :2rem;
+    }
+}
+
+@media (max-width:768px){
+    #menu-bars{
+        display: inline-block;
+        color: #e67e22;
+    }
+
+    .header .search-form{
+        top:100%;
+        left:0;
+        right:0;
+        border-top: var(--border);
+        background: #fff;
+        width: 100%;
+        border-radius: 0;
+    }
+    .header .navbar{
+        position: absolute;
+        top:100%; left: 0; right: 0;
+        border-top: var(--border);
+        border-bottom: var(--border);
+        background:#00000096;
+        display: none;
+    }
+    .header .navbar.active{
+        display: block;
+    }
+    .header .navbar a{
+        display: block;
+        background:;
+        padding:1.5rem;
+        margin: 1.5rem;
+        border-radius:  .5rem;
+        border:var(--border);
+    }
+
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:2rem;
+    }
+    .footer{
+        flex-flow: column;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media  screen and (min-width:992px){
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+
+    .contact form .inputBox{
+        width:100%;
+    }
+
+    .blog-text h2{
+        width:50%;
+    }
+
+    .navbar{
+        position: fixed;
+        height:100vh;
+        width:100%;
+        background-color: rgba(0,0,0,.1);
+        flex-direction: column;
+        clip-path:circle(100px at 90% -20%);
+        -webkit-clip-path:circle(100px at 90% -20%);
+        transition: all is ease-out;
+        pointer-events: none;
+    }
+
+}
